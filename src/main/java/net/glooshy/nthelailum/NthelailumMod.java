@@ -1,6 +1,7 @@
 package net.glooshy.nthelailum;
 
 import com.mojang.logging.LogUtils;
+import net.glooshy.nthelailum.item.Moditems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -40,6 +41,8 @@ public class NthelailumMod
     public NthelailumMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        Moditems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
