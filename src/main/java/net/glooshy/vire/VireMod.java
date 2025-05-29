@@ -16,16 +16,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(NthelailumMod.MOD_ID)
+@Mod(VireMod.MOD_ID)
 
-public class NthelailumMod
+public class VireMod
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "vire";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public NthelailumMod()
+    public VireMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -50,6 +50,7 @@ public class NthelailumMod
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(Moditems.NTHELAILUM);
+            event.accept(Moditems.RAW_NTHELAILUM);
         }
     }
 
