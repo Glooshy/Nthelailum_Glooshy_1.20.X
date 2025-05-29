@@ -1,6 +1,6 @@
-package net.glooshy.nthelailum.item;
+package net.glooshy.vire.item;
 
-import net.glooshy.nthelailum.NthelailumMod;
+import net.glooshy.vire.NthelailumMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
