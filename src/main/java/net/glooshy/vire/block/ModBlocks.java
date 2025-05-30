@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, VireMod.MOD_ID);
 
-public static final RegistryObject<Block> NTHELAILUM_BLOCK = registerBlock("nthelailum_block",
+public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthalium_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

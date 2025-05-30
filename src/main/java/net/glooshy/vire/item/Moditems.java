@@ -11,10 +11,10 @@ public class Moditems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, VireMod.MOD_ID);
 
-    public static final RegistryObject<Item> NTHELAILUM = ITEMS.register("nthelailum",
+    public static final RegistryObject<Item> NTHALIUM = ITEMS.register("nthalium",
             ()-> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_NTHELAILUM = ITEMS.register("raw_nthelailum",
+    public static final RegistryObject<Item> RAW_NTHALIUM = ITEMS.register("raw_nthalium",
             ()-> new Item(new Item.Properties()));
 
 
