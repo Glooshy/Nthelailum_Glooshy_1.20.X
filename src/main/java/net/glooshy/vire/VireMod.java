@@ -2,6 +2,7 @@ package net.glooshy.vire;
 
 import com.mojang.logging.LogUtils;
 import net.glooshy.vire.block.ModBlocks;
+import net.glooshy.vire.item.ModCreativeModeTabs;
 import net.glooshy.vire.item.Moditems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -30,6 +31,8 @@ public class VireMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register((modEventBus));
+
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -51,12 +54,11 @@ public class VireMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.NTHALIUM);
-            event.accept(Moditems.RAW_NTHALIUM);
+
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.NTHALIUM_BLOCK);
+
         }
     }
 
