@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_NTHALIUM_BLOCK.get());
+                        output.accept(ModBlocks.NTHALIUM_GEODE.get());
 
                     } ).build());
 

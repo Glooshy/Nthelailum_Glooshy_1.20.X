@@ -19,10 +19,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, VireMod.MOD_ID);
 
 public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthalium_block",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
 
     public static final RegistryObject<Block> RAW_NTHALIUM_BLOCK = registerBlock("raw_nthalium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+
+    public static final RegistryObject<Block> NTHALIUM_GEODE = registerBlock("nthalium_geode",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

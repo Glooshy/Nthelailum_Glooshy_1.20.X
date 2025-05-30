@@ -1,0 +1,13 @@
+{
+  "type": "minecraft_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vire:nthalium_block"
+    }
+  ],
+  "result": {
+    "item": "vire:nthalium",
+    "count": 9
+  }
+}
