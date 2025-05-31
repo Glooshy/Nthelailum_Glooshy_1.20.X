@@ -15,10 +15,10 @@ import java.util.List;
 
 public class ModFoodProperties {
     public static final FoodProperties NTHAGLOOM = new FoodProperties.Builder().nutrition(3).saturationMod(0.25f)
-            .effect(() -> new MobEffectInstance(MobEffects.HARM, 10), 0.3f)
-            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 400), 0.5f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 0.5f).build();
-
+            .effect(() -> new MobEffectInstance(MobEffects.HARM, 10), 0.25f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000), 0.25f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 0.50f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 500), 0.25f).build();
 
 
 }
