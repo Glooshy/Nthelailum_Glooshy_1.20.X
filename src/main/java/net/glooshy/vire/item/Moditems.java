@@ -22,7 +22,7 @@ public class Moditems {
             ()-> new Item(new Item.Properties().food(ModFoodProperties.NTHAGLOOM)));
 
     public static final RegistryObject<Item> CHARED_INGOT = ITEMS.register("chared_ingot",
-            ()-> new FuelIteam(new Item.Properties(), 200));
+            ()-> new FuelIteam(new Item.Properties(), 32000));
 
 
     public static void register(IEventBus eventBus) {
