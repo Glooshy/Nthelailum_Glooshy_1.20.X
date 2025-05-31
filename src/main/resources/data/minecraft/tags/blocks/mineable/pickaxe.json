@@ -1,0 +1,8 @@
+{
+  "replace":false,
+  "values": [
+    "vire:nthalium_block",
+    "vire:raw_nthalium_block",
+    "vire:nthalium_geode"
+  ]
+}

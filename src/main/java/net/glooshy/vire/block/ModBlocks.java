@@ -2,10 +2,12 @@ package net.glooshy.vire.block;
 
 import net.glooshy.vire.VireMod;
 import net.glooshy.vire.item.Moditems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,13 +21,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, VireMod.MOD_ID);
 
 public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthalium_block",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> RAW_NTHALIUM_BLOCK = registerBlock("raw_nthalium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NTHALIUM_GEODE = registerBlock("nthalium_geode",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

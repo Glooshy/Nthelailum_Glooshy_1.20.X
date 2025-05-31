@@ -17,6 +17,9 @@ public class Moditems {
     public static final RegistryObject<Item> RAW_NTHALIUM = ITEMS.register("raw_nthalium",
             ()-> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> NTHAGLOOM = ITEMS.register("nthagloom",
+            ()-> new Item(new Item.Properties().food(ModFoodProperties.NTHAGLOOM)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

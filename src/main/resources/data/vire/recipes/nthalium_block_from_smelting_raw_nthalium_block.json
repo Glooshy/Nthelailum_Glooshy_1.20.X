@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "nhtalium",
+  "ingredient": {
+    "item": "vire:raw_nthalium_block"
+  },
+  "result": "vire:nthalium_block"
+}

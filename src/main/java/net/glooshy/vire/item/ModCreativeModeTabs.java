@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.NTHALIUM.get());
                         output.accept(Moditems.RAW_NTHALIUM.get());
+                        output.accept(Moditems.NTHAGLOOM.get());
 
                         output.accept(ModBlocks.NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_NTHALIUM_BLOCK.get());
