@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nthalium_geode": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vire:nthalium_geode"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vire:nthalium_from_smelting_nthalium_geode"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_nthalium_geode",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vire:nthalium_from_smelting_nthalium_geode"
+    ]
+  },
+  "sends_telemetry_event": false
+}
