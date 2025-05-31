@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vire:nthalium",
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "result": {
+    "item": "vire:nthalium",
+    "count": 9
+  }
+}
