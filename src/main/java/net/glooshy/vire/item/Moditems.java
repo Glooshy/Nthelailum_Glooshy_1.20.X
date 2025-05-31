@@ -1,6 +1,7 @@
 package net.glooshy.vire.item;
 
 import net.glooshy.vire.VireMod;
+import net.glooshy.vire.item.custom.FuelIteam;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,9 @@ public class Moditems {
 
     public static final RegistryObject<Item> NTHAGLOOM = ITEMS.register("nthagloom",
             ()-> new Item(new Item.Properties().food(ModFoodProperties.NTHAGLOOM)));
+
+    public static final RegistryObject<Item> CHARED_INGOT = ITEMS.register("chared_ingot",
+            ()-> new FuelIteam(new Item.Properties(), 200));
 
 
     public static void register(IEventBus eventBus) {
