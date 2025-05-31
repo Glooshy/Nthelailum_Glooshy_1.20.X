@@ -5,10 +5,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 import org.jetbrains.annotations.Nullable;
 
-public class FuelIteam extends Item {
+
+public class FuelItem extends Item {
     private int burnTime = 0;
 
-    public FuelIteam(Properties pProperties, int burnTime) {
+
+
+    public FuelItem(Properties pProperties, int burnTime) {
         super(pProperties);
         this.burnTime = burnTime;
     }
