@@ -7,6 +7,7 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -35,7 +36,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(Moditems.NTHALIUM.get()).build()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Moditems.NTHALIUM.get(), 9)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NTHALIUM_STAIRS.get(), 4)
+                .pattern("A  ")
+                .pattern("AA ")
+                .pattern("AAA")
+                .define('A', ModBlocks.NTHALIUM_BLOCK.get())
+                .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Moditems.NTHALIUM.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NTHALIUM_SLAB.get(), 6)
+                .pattern("AAA")
+                .define('A', ModBlocks.NTHALIUM_BLOCK.get())
+                .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Moditems.NTHALIUM.get()).build()))
+                .save(pWriter);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Moditems.NTHAGLOOM.get(), 3)
+                .requires(Moditems.NTHALIUM.get())
+                .requires(Items.SWEET_BERRIES)
+                .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Moditems.NTHALIUM.get()).build()))
+                .save(pWriter);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Moditems.NTHALIUM.get(), 9)
                 .requires(ModBlocks.NTHALIUM_BLOCK.get())
                 .unlockedBy("has_nthalium_block", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ModBlocks.NTHALIUM_BLOCK.get()).build()))

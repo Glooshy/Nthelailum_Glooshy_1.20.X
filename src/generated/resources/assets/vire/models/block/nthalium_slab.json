@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "vire:block/nthalium_block",
+    "side": "vire:block/nthalium_block",
+    "top": "vire:block/nthalium_block"
+  }
+}

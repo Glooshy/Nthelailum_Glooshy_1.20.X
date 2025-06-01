@@ -7,7 +7,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
@@ -25,6 +27,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock((StairBlock) ModBlocks.NTHALIUM_STAIRS.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
        slabBlock(((SlabBlock) ModBlocks.NTHALIUM_SLAB.get()), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
 
+        blockItem(ModBlocks.NTHALIUM_STAIRS);
+        blockItem(ModBlocks.NTHALIUM_SLAB);
+
+
+    }
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("vire:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

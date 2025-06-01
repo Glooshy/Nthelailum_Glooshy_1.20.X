@@ -1,4 +1,4 @@
-// 1.20	2025-06-01T20:53:36.8986232	Block States: vire
+// 1.20	2025-06-01T21:12:46.7755726	Block States: vire
 d9e89666e7940fd0dcbc9957227f8992045dbc67 assets/vire/blockstates/nthalium_block.json
 fb1b3912aec5dd42d57fb4e525fbc7388bcfe6ef assets/vire/blockstates/nthalium_geode.json
 735beade969f8645563245c6721d191d29ed5964 assets/vire/blockstates/nthalium_slab.json
@@ -14,4 +14,6 @@ c08b8b533b66a3ea5253916c2a54194334799d56 assets/vire/models/block/nthalium_stair
 5e329466c3f367e41cfc3630e98ca24fe86fc7b4 assets/vire/models/block/raw_nthalium_block.json
 1fc5e2ddd188ca722d1edd7a1be3e91eb3452504 assets/vire/models/item/nthalium_block.json
 6d4dab101216b19b43f1b50c96a987f6cd9ef83d assets/vire/models/item/nthalium_geode.json
+15a5da7c31d9d4e9f4d2003ea22473cbb68014fc assets/vire/models/item/nthalium_slab.json
+c04543d9cc0b23e0b996d28652a9f3454e99d97f assets/vire/models/item/nthalium_stairs.json
 4724432c6d84b055ca89a514999711119a13edd4 assets/vire/models/item/raw_nthalium_block.json
