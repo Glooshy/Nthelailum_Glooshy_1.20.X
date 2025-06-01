@@ -5,9 +5,12 @@
   "item.vire.chared_ingot": "Chared Ingot",
   "item.mccourse.metal_detector": "Metal Detector",
 
+
   "block.vire.nthalium_block": "Block of N'thalium",
   "block.vire.raw_nthalium_block": "Block of raw N'thalium",
   "block.vire.nthalium_geode": "N'thalium Geode",
+  "item.vire.nthalium_stairs": "N'thalium Stairs",
+  "item.vire.nthalium_slab": "N'thalium Slab",
 
   "creative_tab.vire_tab": "Vire",
 

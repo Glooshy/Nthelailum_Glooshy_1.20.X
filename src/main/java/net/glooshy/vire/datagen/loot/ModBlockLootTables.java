@@ -21,6 +21,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.NTHALIUM_GEODE.get(),
                 block -> createOreDrop(ModBlocks.NTHALIUM_BLOCK.get(), Moditems.RAW_NTHALIUM.get()));
+
+        this.dropSelf(ModBlocks.NTHALIUM_STAIRS.get());
+        this.add(ModBlocks.NTHALIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.NTHALIUM_SLAB.get()));
+
     }
 
     @Override

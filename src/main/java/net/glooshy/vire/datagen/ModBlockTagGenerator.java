@@ -27,12 +27,16 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.NTHALIUM_BLOCK.get(),
                         ModBlocks.RAW_NTHALIUM_BLOCK.get(),
-                        ModBlocks.NTHALIUM_GEODE.get());
+                        ModBlocks.NTHALIUM_GEODE.get(),
+                        ModBlocks.NTHALIUM_STAIRS.get(),
+                        ModBlocks.NTHALIUM_SLAB.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.NTHALIUM_BLOCK.get(),
                         ModBlocks.RAW_NTHALIUM_BLOCK.get(),
-                        ModBlocks.NTHALIUM_GEODE.get());
+                        ModBlocks.NTHALIUM_GEODE.get(),
+                        ModBlocks.NTHALIUM_STAIRS.get(),
+                        ModBlocks.NTHALIUM_SLAB.get());
     }
 
     @Override

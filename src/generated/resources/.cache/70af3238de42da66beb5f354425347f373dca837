@@ -1,4 +1,4 @@
-// 1.20	2025-05-31T23:23:56.3584593	Block Tags
-2ac0d1131c9d1e44eb5c73acef77988c77f6e375 data/minecraft/tags/blocks/mineable/pickaxe.json
-2ac0d1131c9d1e44eb5c73acef77988c77f6e375 data/minecraft/tags/blocks/needs_iron_tool.json
+// 1.20	2025-06-01T20:55:30.1345251	Block Tags
+aae53b7b7d23f50a86d9f7103e6eecc76e9806ad data/minecraft/tags/blocks/mineable/pickaxe.json
+aae53b7b7d23f50a86d9f7103e6eecc76e9806ad data/minecraft/tags/blocks/needs_iron_tool.json
 faabb69ab0281f3e6bdfe7ef221c35509fdd84e3 data/vire/tags/blocks/metal_detector_valuables.json

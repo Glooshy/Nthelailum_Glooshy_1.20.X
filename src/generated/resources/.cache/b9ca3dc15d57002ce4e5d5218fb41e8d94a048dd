@@ -1,9 +1,16 @@
-// 1.20	2025-05-31T23:23:56.3594581	Block States: vire
+// 1.20	2025-06-01T20:53:36.8986232	Block States: vire
 d9e89666e7940fd0dcbc9957227f8992045dbc67 assets/vire/blockstates/nthalium_block.json
 fb1b3912aec5dd42d57fb4e525fbc7388bcfe6ef assets/vire/blockstates/nthalium_geode.json
+735beade969f8645563245c6721d191d29ed5964 assets/vire/blockstates/nthalium_slab.json
+506063aea45f54250cd74205eeda9496e28c3ce8 assets/vire/blockstates/nthalium_stairs.json
 5737d5b8a772a881c1f3782e1d1e1ca5dda854c6 assets/vire/blockstates/raw_nthalium_block.json
 2537c1a1337a4d00db68a026903463adb7bafe43 assets/vire/models/block/nthalium_block.json
 02183c7138be38b383b8d7c69442560c6b2f975d assets/vire/models/block/nthalium_geode.json
+42525b8e5890fd4e581e34799b7cf03804f3bd43 assets/vire/models/block/nthalium_slab.json
+27333548f81de600b19186a8fc8311b0b6e540e6 assets/vire/models/block/nthalium_slab_top.json
+c08b8b533b66a3ea5253916c2a54194334799d56 assets/vire/models/block/nthalium_stairs.json
+175d052e1b05d7340e721eba7df39f34633bac78 assets/vire/models/block/nthalium_stairs_inner.json
+3a127037ff5657f43ce8152e1952d2558251f70c assets/vire/models/block/nthalium_stairs_outer.json
 5e329466c3f367e41cfc3630e98ca24fe86fc7b4 assets/vire/models/block/raw_nthalium_block.json
 1fc5e2ddd188ca722d1edd7a1be3e91eb3452504 assets/vire/models/item/nthalium_block.json
 6d4dab101216b19b43f1b50c96a987f6cd9ef83d assets/vire/models/item/nthalium_geode.json
