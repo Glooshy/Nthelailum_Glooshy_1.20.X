@@ -26,6 +26,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NTHALIUM_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.NTHALIUM_SLAB.get()));
 
+        this.dropSelf(ModBlocks.NTHALIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.NTHALIUM_PRESSURE_PLATE.get());
     }
 
     @Override

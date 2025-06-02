@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.NTHALIUM_GEODE.get());
                         output.accept(ModBlocks.NTHALIUM_SLAB.get());
                         output.accept(ModBlocks.NTHALIUM_STAIRS.get());
+                        output.accept(ModBlocks.NTHALIUM_BUTTON.get());
+                        output.accept(ModBlocks.NTHALIUM_PRESSURE_PLATE.get());
 
                         output.accept(Moditems.CHARED_INGOT.get());
 
