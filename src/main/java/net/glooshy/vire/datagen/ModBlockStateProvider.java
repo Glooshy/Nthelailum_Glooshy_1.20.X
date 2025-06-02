@@ -36,7 +36,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         buttonBlock((ButtonBlock) ModBlocks.NTHALIUM_BUTTON.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
         pressurePlateBlock((PressurePlateBlock) ModBlocks.NTHALIUM_PRESSURE_PLATE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
 
-
     }
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("vire:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
