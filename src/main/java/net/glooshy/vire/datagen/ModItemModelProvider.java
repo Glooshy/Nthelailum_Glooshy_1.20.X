@@ -5,6 +5,7 @@ import net.glooshy.vire.block.ModBlocks;
 import net.glooshy.vire.item.Moditems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;

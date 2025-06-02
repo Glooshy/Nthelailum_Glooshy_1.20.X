@@ -35,11 +35,11 @@ public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthali
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.SMOOTH_QUARTZ_SLAB).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NTHALIUM_PRESSURE_PLATE = registerBlock("nthalium_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
-                    BlockBehaviour.Properties.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE).sound(SoundType.AMETHYST), BlockSetType.IRON));
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS).sound(SoundType.METAL), BlockSetType.IRON));
 
     public static final RegistryObject<Block> NTHALIUM_BUTTON = registerBlock("nthalium_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.AMETHYST), BlockSetType.IRON, 15, true));
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_STAIRS).sound(SoundType.AMETHYST), BlockSetType.IRON, 15, true));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
