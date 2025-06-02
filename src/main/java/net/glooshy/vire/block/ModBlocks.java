@@ -39,7 +39,7 @@ public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthali
                     BlockBehaviour.Properties.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE).sound(SoundType.AMETHYST), BlockSetType.IRON));
 
     public static final RegistryObject<Block> NTHALIUM_BUTTON = registerBlock("nthalium_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.AMETHYST), BlockSetType.IRON, 5, true));
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).sound(SoundType.AMETHYST), BlockSetType.IRON, 15, true));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
