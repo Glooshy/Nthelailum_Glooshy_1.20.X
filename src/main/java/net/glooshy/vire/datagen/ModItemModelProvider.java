@@ -27,12 +27,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(Moditems.NTHAGLOOM);
         simpleItem(Moditems.METAL_DETECTOR);
         simpleItem(Moditems.CHARED_INGOT);
+        pressurePlateItem(ModBlocks.NTHALIUM_PRESSURE_PLATE, ModBlocks.NTHALIUM_BLOCK);
 
         buttonItem(ModBlocks.NTHALIUM_BUTTON, ModBlocks.NTHALIUM_BLOCK);
 
 
 
     }
+
+    public void pressurePlateItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(
+                ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                mcLoc("block/pressure_plate_up")
+        ).texture("texture", new ResourceLocation(
+                VireMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()
+        ));
+    }
+
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
