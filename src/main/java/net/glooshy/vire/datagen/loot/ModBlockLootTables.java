@@ -28,6 +28,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.NTHALIUM_BUTTON.get());
         this.dropSelf(ModBlocks.NTHALIUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.NTHALIUM_WALL.get());
+        this.dropSelf(ModBlocks.NTHALIUM_FENCE.get());
+        this.dropSelf(ModBlocks.NTHALIUM_FENCE_GATE.get());
+
     }
 
     @Override

@@ -35,6 +35,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         buttonBlock((ButtonBlock) ModBlocks.NTHALIUM_BUTTON.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
         pressurePlateBlock((PressurePlateBlock) ModBlocks.NTHALIUM_PRESSURE_PLATE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        fenceBlock((FenceBlock) ModBlocks.NTHALIUM_FENCE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.NTHALIUM_FENCE_GATE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        wallBlock((WallBlock) ModBlocks.NTHALIUM_WALL.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
 
     }
     private void blockItem(RegistryObject<Block> blockRegistryObject) {

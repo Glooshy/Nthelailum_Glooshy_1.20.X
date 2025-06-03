@@ -23,22 +23,44 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(Moditems.NTHALIUM);
         simpleItem(Moditems.RAW_NTHALIUM);
-
         simpleItem(Moditems.NTHAGLOOM);
         simpleItem(Moditems.METAL_DETECTOR);
         simpleItem(Moditems.CHARED_INGOT);
-        pressurePlateItem(ModBlocks.NTHALIUM_PRESSURE_PLATE, ModBlocks.NTHALIUM_BLOCK);
 
+        pressurePlateItem(ModBlocks.NTHALIUM_PRESSURE_PLATE, ModBlocks.NTHALIUM_BLOCK);
         buttonItem(ModBlocks.NTHALIUM_BUTTON, ModBlocks.NTHALIUM_BLOCK);
+        fenceItem(ModBlocks.NTHALIUM_FENCE, ModBlocks.NTHALIUM_BLOCK);
+        wallItem(ModBlocks.NTHALIUM_WALL, ModBlocks.NTHALIUM_BLOCK);
+
+
 
 
 
     }
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(
+                ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                mcLoc("block/wall_inventory")
+        ).texture("wall", new ResourceLocation(
+                VireMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()
+        ));
+    }
+
 
     public void pressurePlateItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(
                 ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 mcLoc("block/pressure_plate_up")
+        ).texture("texture", new ResourceLocation(
+                VireMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()
+        ));
+    }
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(
+                ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                mcLoc("block/fence_inventory")
         ).texture("texture", new ResourceLocation(
                 VireMod.MOD_ID,
                 "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()

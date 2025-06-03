@@ -2,7 +2,7 @@ package net.glooshy.vire.block;
 
 import net.glooshy.vire.VireMod;
 import net.glooshy.vire.item.Moditems;
-import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -40,6 +40,15 @@ public static final RegistryObject<Block> NTHALIUM_BLOCK = registerBlock("nthali
 
     public static final RegistryObject<Block> NTHALIUM_BUTTON = registerBlock("nthalium_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE_STAIRS).sound(SoundType.AMETHYST), BlockSetType.IRON, 15, true));
+
+    public static final RegistryObject<Block> NTHALIUM_FENCE = registerBlock("nthalium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> NTHALIUM_FENCE_GATE = registerBlock("nthalium_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> NTHALIUM_WALL = registerBlock("nthalium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
