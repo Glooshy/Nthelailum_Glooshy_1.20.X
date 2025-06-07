@@ -31,12 +31,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.NTHALIUM_BUTTON, ModBlocks.NTHALIUM_BLOCK);
         fenceItem(ModBlocks.NTHALIUM_FENCE, ModBlocks.NTHALIUM_BLOCK);
         wallItem(ModBlocks.NTHALIUM_WALL, ModBlocks.NTHALIUM_BLOCK);
+        fenceGateItem(ModBlocks.NTHALIUM_FENCE_GATE, ModBlocks.NTHALIUM_BLOCK);
+
+
 
 
 
 
 
     }
+    public void fenceGateItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(
+                ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                mcLoc("block/fence_gate")
+        ).texture("texture", new ResourceLocation(
+                VireMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()
+        ));
+    }
+
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(
                 ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),

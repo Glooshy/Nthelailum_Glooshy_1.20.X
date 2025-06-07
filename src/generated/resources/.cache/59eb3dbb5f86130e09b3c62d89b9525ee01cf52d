@@ -1,8 +1,11 @@
-// 1.20	2025-06-02T19:30:07.1770868	Loot Tables
+// 1.20	2025-06-07T14:06:00.8416133	Loot Tables
 af994839716ec96f8629da76ec3084f9388d27b2 data/vire/loot_tables/blocks/nthalium_block.json
 8e19095f94ceb8dd8662420fdd1b9034f961fe58 data/vire/loot_tables/blocks/nthalium_button.json
+2060ab9f06ab335e0cd666c13ffc13813973490a data/vire/loot_tables/blocks/nthalium_fence.json
+7e339174c36b5d08bab963a958c0c9888c8fba93 data/vire/loot_tables/blocks/nthalium_fence_gate.json
 33a7cc69693e97f69c1a79ac69f76f5e096f3007 data/vire/loot_tables/blocks/nthalium_geode.json
 bbeadb33734295ebefbb1c96ff17b2192f3218c7 data/vire/loot_tables/blocks/nthalium_pressure_plate.json
 237fb36d976d29b1635514195e05f6ca8b169d6b data/vire/loot_tables/blocks/nthalium_slab.json
 5c9a42ebecfc56a643d578f1310cd075a16871a7 data/vire/loot_tables/blocks/nthalium_stairs.json
+b6ae7c8540c690c20bc075ccf96322c290251572 data/vire/loot_tables/blocks/nthalium_wall.json
 d9f98e4ceaaf6d0fe6ab0c322e14d4f48ae17585 data/vire/loot_tables/blocks/raw_nthalium_block.json
