@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -34,21 +35,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceGateItem(ModBlocks.NTHALIUM_FENCE_GATE, ModBlocks.NTHALIUM_BLOCK);
 
 
-
-
-
-
-
     }
+
     public void fenceGateItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(
                 ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
-                mcLoc("block/fence_gate")
-        ).texture("texture", new ResourceLocation(
+                new ResourceLocation(VireMod.MOD_ID, "item/fence_gate_inventory")
+        ).texture("layer0", new ResourceLocation(
                 VireMod.MOD_ID,
                 "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()
         ));
     }
+
+
+
+
 
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(
