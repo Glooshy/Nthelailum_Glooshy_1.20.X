@@ -1,0 +1,11 @@
+{
+  "values": [
+    "vire:nthalium_block",
+    "vire:raw_nthalium_block",
+    "vire:nthalium_geode",
+    "vire:nthalium_stairs",
+    "vire:nthalium_slab",
+    "vire:nthalium_fence",
+    "vire:nthalium_wall"
+  ]
+}

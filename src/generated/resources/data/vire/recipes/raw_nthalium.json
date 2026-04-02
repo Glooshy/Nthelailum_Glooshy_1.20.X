@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "nthalium",
+  "key": {
+    "#": {
+      "item": "vire:raw_nthalium"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "vire:raw_nthalium_block"
+  },
+  "show_notification": true
+}

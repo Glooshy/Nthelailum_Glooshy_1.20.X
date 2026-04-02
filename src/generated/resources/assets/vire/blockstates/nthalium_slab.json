@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vire:block/nthalium_slab"
+    },
+    "type=double": {
+      "model": "vire:block/nthalium_block"
+    },
+    "type=top": {
+      "model": "vire:block/nthalium_slab_top"
+    }
+  }
+}
