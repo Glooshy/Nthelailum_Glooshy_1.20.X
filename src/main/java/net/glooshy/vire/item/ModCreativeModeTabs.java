@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(Moditems.CHARED_INGOT.get());
 
+                        output.accept(Moditems.SPIRE_SPAWN_EGG.get());
+
                     } ).build());
 
     public static void register(IEventBus eventBus) {

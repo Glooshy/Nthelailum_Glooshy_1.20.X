@@ -1,9 +1,11 @@
 package net.glooshy.vire.item;
 
 import net.glooshy.vire.VireMod;
+import net.glooshy.vire.entity.ModEntities;
 import net.glooshy.vire.item.custom.FuelItem;
 import net.glooshy.vire.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +29,9 @@ public class Moditems {
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
+    public static final RegistryObject<Item> SPIRE_SPAWN_EGG = ITEMS.register("spire_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SPIRE, 0x7e960, 0xc5d1c5,
+                    new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

@@ -17,34 +17,47 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Basic blocks
         blockWithItem(ModBlocks.NTHALIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_NTHALIUM_BLOCK);
-
         blockWithItem(ModBlocks.NTHALIUM_GEODE);
 
-
-
-        //#####################################
-        //#####################################
-
-        stairsBlock((StairBlock) ModBlocks.NTHALIUM_STAIRS.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        slabBlock(((SlabBlock) ModBlocks.NTHALIUM_SLAB.get()), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        // Stairs and slabs
+        stairsBlock((StairBlock) ModBlocks.NTHALIUM_STAIRS.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        slabBlock((SlabBlock) ModBlocks.NTHALIUM_SLAB.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
 
         blockItem(ModBlocks.NTHALIUM_STAIRS);
         blockItem(ModBlocks.NTHALIUM_SLAB);
 
-        buttonBlock((ButtonBlock) ModBlocks.NTHALIUM_BUTTON.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        pressurePlateBlock((PressurePlateBlock) ModBlocks.NTHALIUM_PRESSURE_PLATE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        fenceBlock((FenceBlock) ModBlocks.NTHALIUM_FENCE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        fenceGateBlock((FenceGateBlock) ModBlocks.NTHALIUM_FENCE_GATE.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        wallBlock((WallBlock) ModBlocks.NTHALIUM_WALL.get(), blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        // Button & pressure plate
+        buttonBlock((ButtonBlock) ModBlocks.NTHALIUM_BUTTON.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        blockItem(ModBlocks.NTHALIUM_BUTTON);
 
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.NTHALIUM_PRESSURE_PLATE.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+
+        // Fence
+        fenceBlock((FenceBlock) ModBlocks.NTHALIUM_FENCE.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+
+        // Wall
+        wallBlock((WallBlock) ModBlocks.NTHALIUM_WALL.get(),
+                blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+        blockItem(ModBlocks.NTHALIUM_WALL);
     }
+
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("vire:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
+        simpleBlockItem(blockRegistryObject.get(),
+                new ModelFile.UncheckedModelFile("vire:block/" +
+                        ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+        simpleBlockWithItem(blockRegistryObject.get(),
+                cubeAll(blockRegistryObject.get()));
     }
 }

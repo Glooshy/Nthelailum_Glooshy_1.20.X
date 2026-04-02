@@ -20,5 +20,7 @@
   "creative_tab.vire_tab": "Vire",
 
   "tooltip.vire.nthagloom.tooltip.shift": "",
-  "item.vire.metal_detector.no_valuable": "No Valuable Found!"
+  "item.vire.metal_detector.no_valuable": "No Valuable Found!",
+
+  "item.vire.spire_spawn_egg": "Spore Spawn Egg"
 }

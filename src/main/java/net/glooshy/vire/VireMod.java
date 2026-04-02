@@ -2,8 +2,11 @@ package net.glooshy.vire;
 
 import com.mojang.logging.LogUtils;
 import net.glooshy.vire.block.ModBlocks;
+import net.glooshy.vire.entity.ModEntities;
+import net.glooshy.vire.entity.client.SpireRenderer;
 import net.glooshy.vire.item.ModCreativeModeTabs;
 import net.glooshy.vire.item.Moditems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +38,7 @@ public class VireMod
 
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -76,7 +80,7 @@ public class VireMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.SPIRE.get(), SpireRenderer::new);
         }
     }
 }

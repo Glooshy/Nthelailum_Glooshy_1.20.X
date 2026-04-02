@@ -32,8 +32,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NTHALIUM_STAIRS.get(),
                         ModBlocks.NTHALIUM_SLAB.get(),
                         ModBlocks.NTHALIUM_FENCE.get(),
-                        ModBlocks.NTHALIUM_FENCE_GATE.get(),
-                        ModBlocks.NTHALIUM_WALL.get());
+                              ModBlocks.NTHALIUM_WALL.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(   ModBlocks.NTHALIUM_BLOCK.get(),
@@ -42,14 +41,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NTHALIUM_STAIRS.get(),
                         ModBlocks.NTHALIUM_SLAB.get(),
                         ModBlocks.NTHALIUM_FENCE.get(),
-                        ModBlocks.NTHALIUM_FENCE_GATE.get(),
                         ModBlocks.NTHALIUM_WALL.get());
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.NTHALIUM_FENCE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.NTHALIUM_WALL.get());
-        this.tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.NTHALIUM_FENCE_GATE.get());
 
     }
 
