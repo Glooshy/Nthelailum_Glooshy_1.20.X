@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "vire:nthalium_block"
+    },
+    "B": {
+      "item": "vire:nthalium"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ABA"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vire:nthalium_fence"
+  },
+  "show_notification": true
+}
