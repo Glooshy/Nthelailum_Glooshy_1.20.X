@@ -109,7 +109,7 @@ public class ModAnimationDefinition {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2f, KeyframeAnimations.degreeVec(60f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
-    public static final AnimationDefinition ATTACK = AnimationDefinition.Builder.withLength(0.5f)
+    public static final AnimationDefinition ATTACK = AnimationDefinition.Builder.withLength(0.5f).looping()
             .addAnimation("Torso",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),

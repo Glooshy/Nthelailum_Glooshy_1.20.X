@@ -23,18 +23,30 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.RAW_NTHALIUM.get());
                         output.accept(Moditems.NTHAGLOOM.get());
 
+                        output.accept(Moditems.METAL_DETECTOR.get());
+
+                        output.accept(Moditems.CHARED_INGOT.get());
+
+
+                        //TOOLS
+                        output.accept(Moditems.NTHALIUM_SWORD.get());
+                        output.accept(Moditems.NTHALIUM_PICKAXE.get());
+                        output.accept(Moditems.NTHALIUM_AXE.get());
+                        output.accept(Moditems.NTHALIUM_SHOVEL.get());
+                        output.accept(Moditems.NTHALIUM_HOE.get());
+
+
                         output.accept(ModBlocks.NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.NTHALIUM_GEODE.get());
                         output.accept(ModBlocks.NTHALIUM_SLAB.get());
                         output.accept(ModBlocks.NTHALIUM_STAIRS.get());
                         output.accept(ModBlocks.NTHALIUM_BUTTON.get());
+                        output.accept(ModBlocks.NTHALIUM_WALL.get());
+                        output.accept(ModBlocks.NTHALIUM_FENCE.get());
                         output.accept(ModBlocks.NTHALIUM_PRESSURE_PLATE.get());
 
-                        output.accept(Moditems.CHARED_INGOT.get());
-
                         output.accept(Moditems.SPIRE_SPAWN_EGG.get());
-
                     } ).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,3 +1,6 @@
 {
-  "parent": "vire:block/nthalium_wall"
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "vire:block/nthalium_block"
+  }
 }

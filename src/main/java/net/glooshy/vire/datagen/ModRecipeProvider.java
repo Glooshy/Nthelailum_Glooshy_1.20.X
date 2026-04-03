@@ -36,7 +36,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(Moditems.NTHALIUM.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NTHALIUM_STAIRS.get(), 4)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NTHALIUM_STAIRS.get(), 4)
                 .pattern("A  ")
                 .pattern("AA ")
                 .pattern("AAA")
@@ -45,7 +45,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(Moditems.NTHALIUM.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NTHALIUM_SLAB.get(), 6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NTHALIUM_SLAB.get(), 6)
+                .pattern("AAA")
+                .define('A', ModBlocks.NTHALIUM_BLOCK.get())
+                .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Moditems.NTHALIUM.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NTHALIUM_FENCE.get(), 6)
+                .pattern("ABA")
+                .pattern("ABA")
+                .define('A', ModBlocks.NTHALIUM_BLOCK.get())
+                .define('B', Moditems.NTHALIUM.get())
+                .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Moditems.NTHALIUM.get()).build()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.NTHALIUM_WALL.get(), 6)
+                .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModBlocks.NTHALIUM_BLOCK.get())
                 .unlockedBy("has_nthalium", inventoryTrigger(ItemPredicate.Builder.item()

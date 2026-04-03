@@ -4,6 +4,7 @@ import net.glooshy.vire.VireMod;
 import net.glooshy.vire.block.ModBlocks;
 import net.glooshy.vire.item.Moditems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
@@ -26,6 +27,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(Moditems.METAL_DETECTOR);
         simpleItem(Moditems.CHARED_INGOT);
 
+
+        handheldItem(Moditems.NTHALIUM_AXE);
+        handheldItem(Moditems.NTHALIUM_HOE);
+        handheldItem(Moditems.NTHALIUM_PICKAXE);
+        handheldItem(Moditems.NTHALIUM_SWORD);
+        handheldItem(Moditems.NTHALIUM_SHOVEL);
+
         // Block items using vanilla templates
         buttonItem(ModBlocks.NTHALIUM_BUTTON, ModBlocks.NTHALIUM_BLOCK);
         pressurePlateItem(ModBlocks.NTHALIUM_PRESSURE_PLATE, ModBlocks.NTHALIUM_BLOCK);
@@ -39,6 +47,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(), mcLoc("item/generated"))
                 .texture("layer0", modLoc("item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(VireMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     private void buttonItem(RegistryObject<Block> block, RegistryObject<Block> base) {

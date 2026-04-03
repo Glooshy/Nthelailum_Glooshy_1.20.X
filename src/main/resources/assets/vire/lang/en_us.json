@@ -3,7 +3,13 @@
   "item.vire.raw_nthalium": "Raw N'thalium",
   "item.vire.nthagloom": "N'thaGloom",
   "item.vire.chared_ingot": "Chared Ingot",
-  "item.mccourse.metal_detector": "Metal Detector",
+  "item.vire.metal_detector": "Metal Detector",
+  "item.vire.nthalium_sword": "Nthalium Sword",
+  "item.vire.nthalium_pickaxe": "Nthalium Pickaxe",
+  "item.vire.nthalium_axe": "Nthalium Axe",
+  "item.vire.nthalium_shovel": "Nthalium Shovel",
+  "item.vire.nthalium_hoe": "Nthalium Hoe",
+
 
 
   "block.vire.nthalium_block": "Block of N'thalium",

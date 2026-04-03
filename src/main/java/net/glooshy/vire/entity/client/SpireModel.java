@@ -70,6 +70,7 @@ public class SpireModel<T extends SpireEntity> extends HierarchicalModel<T> {
 
         this.animateWalk(ModAnimationDefinition.WALK, limbSwing, limbSwingAmount, 2f, 100f);
         this.animate(entity.idleAnimationState, ModAnimationDefinition.IDLE, ageInTicks, 1f);
+        this.animate(entity.attackAnimationState, ModAnimationDefinition.ATTACK, ageInTicks, 1f);
 	}
 
     private void applyHeadRotation(SpireEntity pEntity, float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

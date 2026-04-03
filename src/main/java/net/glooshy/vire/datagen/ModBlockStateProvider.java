@@ -47,7 +47,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Wall
         wallBlock((WallBlock) ModBlocks.NTHALIUM_WALL.get(),
                 blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
-        blockItem(ModBlocks.NTHALIUM_WALL);
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
