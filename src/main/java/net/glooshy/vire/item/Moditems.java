@@ -30,9 +30,8 @@ public class Moditems {
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(512)));
     public static final RegistryObject<Item> SPIRE_SPAWN_EGG = ITEMS.register("spire_spawn_egg",
-            () -> new ForgeSpawnEggItem(ModEntities.SPIRE, 0x7e960, 0xc5d1c5,
+            () -> new ForgeSpawnEggItem(ModEntities.SPIRE, 0x808080, 0x404040,
                     new Item.Properties()));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
