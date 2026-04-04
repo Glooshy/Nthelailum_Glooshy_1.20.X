@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vire:block/crystal_log",
+    "side": "vire:block/crystal_log"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chances": [
+                0.05,
+                0.0625,
+                0.083333336,
+                0.1
+              ],
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune"
+            }
+          ],
+          "name": "vire:crystal_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chances": [
+                0.02,
+                0.022222223,
+                0.025,
+                0.033333335
+              ],
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:stick"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.05,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "vire:raw_nthalium"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "vire:blocks/crystal_leaves"
+}
