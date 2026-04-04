@@ -26,7 +26,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NTHALIUM_GEODE.get()).addTag(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.NTHALIUM_BLOCK.get(),
+                .add(   ModBlocks.NTHALIUM_BLOCK.get(),
                         ModBlocks.RAW_NTHALIUM_BLOCK.get(),
                         ModBlocks.NTHALIUM_GEODE.get(),
                         ModBlocks.NTHALIUM_STAIRS.get(),
@@ -46,6 +46,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NTHALIUM_FENCE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.NTHALIUM_WALL.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.CRYSTAL_LOG.get(),
+                (ModBlocks.CRYSTAL_WOOD.get()),
+                (ModBlocks.STRIPPED_CRYSTAL_LOG.get()),
+                (ModBlocks.STRIPPED_CRYSTAL_WOOD.get()));
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.CRYSTAL_PLANKS.get());
 
     }
 

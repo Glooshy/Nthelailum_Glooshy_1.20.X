@@ -1,6 +1,8 @@
-// 1.20	2026-04-02T21:55:49.6089983	Block Tags
+// 1.20.1	2026-04-04T16:26:46.1294056	Block Tags
 ec621931437dd01464fc8c55d2a60538d5b153c3 data/minecraft/tags/blocks/fences.json
+405dd1a38330e40f166a33abfa069d72334b6511 data/minecraft/tags/blocks/logs_that_burn.json
 c4d4e0736cf77d4772a0b439123f3e25efe60d8a data/minecraft/tags/blocks/mineable/pickaxe.json
 c4d4e0736cf77d4772a0b439123f3e25efe60d8a data/minecraft/tags/blocks/needs_iron_tool.json
+627e8a982252d82655a70f86e152be2f5f506733 data/minecraft/tags/blocks/planks.json
 297690471633f98b37971282d07fab12a111715b data/minecraft/tags/blocks/walls.json
 faabb69ab0281f3e6bdfe7ef221c35509fdd84e3 data/vire/tags/blocks/metal_detector_valuables.json

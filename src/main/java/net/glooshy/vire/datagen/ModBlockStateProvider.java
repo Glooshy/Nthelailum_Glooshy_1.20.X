@@ -3,6 +3,7 @@ package net.glooshy.vire.datagen;
 import net.glooshy.vire.VireMod;
 import net.glooshy.vire.block.ModBlocks;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -47,6 +48,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
         // Wall
         wallBlock((WallBlock) ModBlocks.NTHALIUM_WALL.get(),
                 blockTexture(ModBlocks.NTHALIUM_BLOCK.get()));
+
+        //WOOD
+
+        logBlock((RotatedPillarBlock) ModBlocks.CRYSTAL_LOG.get());
+        axisBlock(((RotatedPillarBlock) ModBlocks.CRYSTAL_WOOD.get()), blockTexture(ModBlocks.CRYSTAL_LOG.get()), blockTexture(ModBlocks.CRYSTAL_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_CRYSTAL_LOG.get(), new ResourceLocation(VireMod.MOD_ID, "block/stripped_crystal_log"),
+                new ResourceLocation(VireMod.MOD_ID, "block/stripped_crystal_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_CRYSTAL_WOOD.get(), new ResourceLocation(VireMod.MOD_ID, "block/stripped_crystal_log"),
+                new ResourceLocation(VireMod.MOD_ID, "block/stripped_crystal_log"));
+
+        blockItem(ModBlocks.CRYSTAL_LOG);
+        blockItem(ModBlocks.CRYSTAL_WOOD);
+        blockItem(ModBlocks.STRIPPED_CRYSTAL_LOG);
+        blockItem(ModBlocks.STRIPPED_CRYSTAL_WOOD);
+
+        blockWithItem(ModBlocks.CRYSTAL_PLANKS);
+
+        leavesBlock(ModBlocks.CRYSTAL_LEAVES);
+        saplingBlock(ModBlocks.CRYSTAL_SAPLING);
+
+
+    }
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().cubeAll(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {

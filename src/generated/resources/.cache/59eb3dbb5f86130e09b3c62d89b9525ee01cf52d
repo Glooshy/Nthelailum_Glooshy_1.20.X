@@ -1,4 +1,9 @@
-// 1.20	2026-04-02T21:55:49.6089983	Loot Tables
+// 1.20.1	2026-04-04T19:07:33.7338825	Loot Tables
+59c0fbe06e8c1a57eb9c78b610ebf34eedd8b32c data/vire/loot_tables/blocks/crystal_leaves.json
+525ddf7778b088da0791bceb9fadc46704c512fb data/vire/loot_tables/blocks/crystal_log.json
+c9aebee026525253e16aa453cd7a37f9e6ed48d9 data/vire/loot_tables/blocks/crystal_planks.json
+91dd5c5ff75b2a384217f21edcb1af495f9f972f data/vire/loot_tables/blocks/crystal_sapling.json
+6b6097688497d606bbea7e69cbb4f9f5dc862051 data/vire/loot_tables/blocks/crystal_wood.json
 af994839716ec96f8629da76ec3084f9388d27b2 data/vire/loot_tables/blocks/nthalium_block.json
 8e19095f94ceb8dd8662420fdd1b9034f961fe58 data/vire/loot_tables/blocks/nthalium_button.json
 2060ab9f06ab335e0cd666c13ffc13813973490a data/vire/loot_tables/blocks/nthalium_fence.json
@@ -8,3 +13,5 @@ bbeadb33734295ebefbb1c96ff17b2192f3218c7 data/vire/loot_tables/blocks/nthalium_p
 5c9a42ebecfc56a643d578f1310cd075a16871a7 data/vire/loot_tables/blocks/nthalium_stairs.json
 b6ae7c8540c690c20bc075ccf96322c290251572 data/vire/loot_tables/blocks/nthalium_wall.json
 d9f98e4ceaaf6d0fe6ab0c322e14d4f48ae17585 data/vire/loot_tables/blocks/raw_nthalium_block.json
+517029008327bbb00e3afc6d875174dccc72909a data/vire/loot_tables/blocks/stripped_crystal_log.json
+641ebfebc1f82b4dba7f1c86158b4840784c833f data/vire/loot_tables/blocks/stripped_crystal_wood.json

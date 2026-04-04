@@ -35,7 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.NTHALIUM_SHOVEL.get());
                         output.accept(Moditems.NTHALIUM_HOE.get());
 
-
+                        //BLOCKS
                         output.accept(ModBlocks.NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_NTHALIUM_BLOCK.get());
                         output.accept(ModBlocks.NTHALIUM_GEODE.get());
@@ -47,6 +47,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.NTHALIUM_PRESSURE_PLATE.get());
 
                         output.accept(Moditems.SPIRE_SPAWN_EGG.get());
+
+                        //WOOD SET
+                        output.accept(ModBlocks.CRYSTAL_LOG.get());
+                        output.accept(ModBlocks.CRYSTAL_WOOD.get());
+                        output.accept(ModBlocks.CRYSTAL_LEAVES.get());
+                        output.accept(ModBlocks.CRYSTAL_PLANKS.get());
+                        output.accept(ModBlocks.STRIPPED_CRYSTAL_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_CRYSTAL_LOG.get());
+                        output.accept(ModBlocks.CRYSTAL_SAPLING.get());
+
                     } ).build());
 
     public static void register(IEventBus eventBus) {

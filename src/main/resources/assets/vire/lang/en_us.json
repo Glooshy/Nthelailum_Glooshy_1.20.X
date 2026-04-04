@@ -28,5 +28,13 @@
   "tooltip.vire.nthagloom.tooltip.shift": "",
   "item.vire.metal_detector.no_valuable": "No Valuable Found!",
 
-  "item.vire.spire_spawn_egg": "Spire Spawn Egg"
+  "item.vire.spire_spawn_egg": "Spire Spawn Egg",
+
+  "block.vire.crystal_log": "Crystal Log",
+  "block.vire.stripped_crystal_log": "Stripped Crystal Log",
+  "block.vire.crystal_wood": "Crystal Wood",
+  "block.vire.stripped_crystal_wood": "Stripped Crystal Wood",
+  "block.vire.crystal_planks": "Crystal Planks",
+  "block.vire.crystal_leaves": "Crystal Leaves",
+  "block.vire.crystal_sapling": "Crystal Sapling"
 }

@@ -34,7 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.NTHALIUM_SWORD);
         handheldItem(Moditems.NTHALIUM_SHOVEL);
 
-        // Block items using vanilla templates
+        // Block items
         buttonItem(ModBlocks.NTHALIUM_BUTTON, ModBlocks.NTHALIUM_BLOCK);
         pressurePlateItem(ModBlocks.NTHALIUM_PRESSURE_PLATE, ModBlocks.NTHALIUM_BLOCK);
         fenceItem(ModBlocks.NTHALIUM_FENCE, ModBlocks.NTHALIUM_BLOCK);
@@ -42,6 +42,15 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Spawn Eggs
         withExistingParent(Moditems.SPIRE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
+        //Sapling
+        saplingItem(ModBlocks.CRYSTAL_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(VireMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
