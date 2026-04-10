@@ -1,6 +1,7 @@
 package net.glooshy.vire.entity;
 
 import net.glooshy.vire.VireMod;
+import net.glooshy.vire.entity.custom.OverSeerEntity;
 import net.glooshy.vire.entity.custom.SpireEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -16,6 +17,10 @@ public class ModEntities {
     public static  final RegistryObject<EntityType<SpireEntity>> SPIRE =
             ENTITY_TYPES.register("spire",() -> EntityType.Builder.of(SpireEntity::new, MobCategory.CREATURE)
                     .sized(0.6f,1.75f).build("spire"));
+
+    public static  final RegistryObject<EntityType<OverSeerEntity>> OVERSEER =
+            ENTITY_TYPES.register("overseer",() -> EntityType.Builder.of(OverSeerEntity::new, MobCategory.MONSTER)
+                    .sized(0.8f,2.95f).build("overseer"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

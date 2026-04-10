@@ -193,5 +193,6 @@ public class ModAnimationDefinition {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(2f, KeyframeAnimations.degreeVec(-90f, 12.5f, -180f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
+
 }
 
